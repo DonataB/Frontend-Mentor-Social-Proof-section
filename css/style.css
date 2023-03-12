@@ -31,11 +31,11 @@ header {
 	text-align: center;
 }
 
-h1 {
+header h1 {
 	color: var(--VeryDarkMagenta);
 }
 
-p {
+header p {
 	margin-top: 20px;
 	color: var(--DarkGrayishMagenta);
 	font-weight: 500;
@@ -108,7 +108,7 @@ p {
 	.wrapper {
 		display: flex;
 		flex-wrap: wrap;
-		padding: 100px;
+		padding: 80px 0;
 	}
 
 	header {
@@ -116,11 +116,11 @@ p {
 		text-align: left;
 	}
 
-	h1 {
+	header h1 {
 		font-size: 46px;
 	}
 
-	p {
+	header p {
 		font-size: 19px;
 	}
 
@@ -161,6 +161,7 @@ p {
 	}
 
 	.card-header {
+		margin-bottom: 10px;
 		font-size: 20px;
 	}
 
@@ -170,11 +171,17 @@ p {
 }
 
 @media (min-width: 1440px) {
+	body {
+		background-image: url('../images/bg-pattern-top-desktop.svg'),
+			url('../images/bg-pattern-bottom-desktop.svg');
+		background-position: 0 0, bottom -120px right 0;
+	}
+
 	header {
 		width: 600px;
 	}
 
-	h1 {
+	header h1 {
 		font-size: 54px;
 	}
 
@@ -210,7 +217,7 @@ p {
 
 	.card {
 		padding: 40px;
-		max-width: 500px;
+		width: 500px;
 	}
 
 	.card-header {
@@ -228,11 +235,5 @@ p {
 	.card:nth-child(3) {
 		position: relative;
 		top: 60px;
-	}
-
-	body {
-		background-image: url('../images/bg-pattern-top-desktop.svg'),
-			url('../images/bg-pattern-bottom-desktop.svg');
-		background-position: 0 0, bottom -120px right 0;
 	}
 }
